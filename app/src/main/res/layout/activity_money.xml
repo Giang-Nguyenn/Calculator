@@ -6,42 +6,50 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Button
-        android:id="@+id/money"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="Money">
-
-    </Button>
-
-    <RelativeLayout
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="20dp"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_margin="16dp"
-        android:background="#C0C0C0">
+        android:layout_height="40dp"
+        android:text="Việt Nam">
 
-        <EditText
-            android:inputType="text"
-            android:id="@+id/edt_input"
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-        <TextView
-            android:id="@+id/txt_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/edt_input"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:gravity=""
-            android:text="0"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+    </TextView>
+    <TextView
+        android:id="@+id/txt_vn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="0">
 
-    </RelativeLayout>
+    </TextView>
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="USD">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_usd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="0">
+
+    </TextView>
+    <TextView
+        android:textSize="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="1USD=23000VND">
+
+    </TextView>
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="303dp"
+        android:layout_height="290dp"
         android:background="#000"
         android:orientation="vertical">
 
